@@ -53,13 +53,12 @@ class OOExerciseTest extends Specification {
   }
   "Exercise 3: Euro with Order trait" should {
     "be correctly orderable" in {
-      skipped("Uncomment and fix me")
-      //      val e1 = new Euro(1, 5)
-      //      val e2 = new Euro(4, 53)
-      //      val e3 = new Euro(8, 10)
-      //      e3 > e1 must beTrue
-      //      val list = List(e2, e1, e3)
-      //      list.sorted ==== List(e1, e2, e3)
+      val e1 = new Euro(1, 5)
+      val e2 = new Euro(4, 53)
+      val e3 = new Euro(8, 10)
+      e3 > e1 must beTrue
+      val list = List(e2, e1, e3)
+      list.sorted ==== List(e1, e2, e3)
     }
   }
 

@@ -1,6 +1,6 @@
 package org.scalalabs.basic.lab01
 import scala.language.implicitConversions
-import scala.math.round
+
 /**
  * The goal of this exercise is to get familiar basic OO constructs in scala
  *
@@ -45,8 +45,10 @@ abstract trait Currency {
   val symbol = "EUR"
 }
 
-class Euro(val euro: Int, val cents: Int = 0) extends Currency {
+class Euro(val euro: Int, val cents: Int = 0) extends Currency with Ordered[Euro] {
   require(cents <= 100 && cents >= 0)
+  def compare(that: Euro) =  this.euro - that.euro
+
   val inCents = euro * 100 + cents
 
   private def euroDiff = (diffCents: Int) => diffCents / 100
