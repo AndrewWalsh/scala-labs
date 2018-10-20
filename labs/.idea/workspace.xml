@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="87f4299c-37e2-4157-a41b-441b70c22ae6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/org/scalalabs/basic/lab01/OOExercise.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/scalalabs/basic/lab01/OOExercise.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/org/scalalabs/basic/lab01/OOExerciseTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/org/scalalabs/basic/lab01/OOExerciseTest.scala" afterDir="false" />
     </list>
@@ -78,8 +77,8 @@
       <file leaf-file-name="OOExerciseTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/org/scalalabs/basic/lab01/OOExerciseTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+            <state relative-caret-position="211">
+              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -87,8 +86,8 @@
       <file leaf-file-name="OOExercise.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/scalalabs/basic/lab01/OOExercise.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+            <state relative-caret-position="131">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#34#75#0" expanded="true" />
               </folding>
@@ -614,21 +613,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 28m 26s.xml">
-      <configuration name="OOExerciseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 29m 34s.xml">
-      <configuration name="OOExerciseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 33m 52s.xml">
-      <configuration name="OOExerciseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 44m 21s.xml">
-      <configuration name="OOExerciseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 44m 39s.xml">
-      <configuration name="OOExerciseTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OOExerciseTest - 2018.10.20 at 23h 48m 40s.xml">
       <configuration name="OOExerciseTest" configurationId="JUnit" />
     </history-entry>
@@ -644,6 +628,21 @@
     <history-entry file="OOExerciseTest - 2018.10.20 at 23h 58m 24s.xml">
       <configuration name="OOExerciseTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 58m 41s.xml">
+      <configuration name="OOExerciseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 58m 53s.xml">
+      <configuration name="OOExerciseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OOExerciseTest - 2018.10.20 at 23h 58m 57s.xml">
+      <configuration name="OOExerciseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OOExerciseTest - 2018.10.21 at 00h 06m 15s.xml">
+      <configuration name="OOExerciseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OOExerciseTest - 2018.10.21 at 00h 08m 53s.xml">
+      <configuration name="OOExerciseTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -651,7 +650,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32714286" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3264177" />
       <window_info anchor="right" id="sbt" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
@@ -669,7 +668,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39972338" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39972338" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Dependency Viewer" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,15 +691,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/org/scalalabs/basic/lab01/OOExercise.scala</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -769,15 +760,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/org/scalalabs/basic/lab01/OOExerciseTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        <state relative-caret-position="211">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/scalalabs/basic/lab01/OOExercise.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        <state relative-caret-position="131">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#34#75#0" expanded="true" />
           </folding>

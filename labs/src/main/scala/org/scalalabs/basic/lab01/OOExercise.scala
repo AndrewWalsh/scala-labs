@@ -41,11 +41,17 @@ import scala.math.round
  *   of type [[org.scalalabs.basic.lab01.CurrencyConverter]]
  * - Use the implicit CurrencyConverter to do the conversion.
  */
-class Euro(val euro: Int, val cents: Int = 0) {
+abstract trait Currency {
+  val symbol = "EUR"
+}
+
+class Euro(val euro: Int, val cents: Int = 0) extends Currency {
   require(cents <= 100 && cents >= 0)
   val inCents = euro * 100 + cents
 
   private def euroDiff = (diffCents: Int) => diffCents / 100
+
+  override def toString = symbol + ": " + euro + ',' + (if (cents > 0) f"$cents%02d" else "--")
 
   def + = (OtherEuro: Euro) => {
     val diff = euroDiff(cents + OtherEuro.cents)
