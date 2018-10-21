@@ -1,5 +1,6 @@
 package org.scalalabs.basic.lab01
 import scala.language.implicitConversions
+import org.scalalabs.basic.lab01.DefaultCurrencyConverter
 
 /**
  * The goal of this exercise is to get familiar basic OO constructs in scala
@@ -77,4 +78,16 @@ object Euro {
     val newCents = cents - euro * 100
     new Euro(euro, newCents)
   }
+
+  implicit class timesInt(timesBy: Int) {
+    def * (e: Euro): Euro = e * timesBy
+  }
+
+  implicit def dollarToEuro(d: Dollar): Euro = {
+    Euro.fromCents(DefaultCurrencyConverter.toEuroCents(d.toCents))
+  }
+}
+
+class Dollar(dollars: Int, cents: Int) {
+  def toCents: Int = dollars * 100 + cents
 }
