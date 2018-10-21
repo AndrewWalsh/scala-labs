@@ -83,8 +83,8 @@ object Euro {
     def * (e: Euro): Euro = e * timesBy
   }
 
-  implicit def dollarToEuro(d: Dollar): Euro = {
-    Euro.fromCents(DefaultCurrencyConverter.toEuroCents(d.toCents))
+  implicit def dollarToEuro(d: Dollar)(implicit c: DefaultCurrencyConverter = DefaultCurrencyConverter): Euro = {
+    Euro.fromCents(c.toEuroCents(d.toCents))
   }
 }
 

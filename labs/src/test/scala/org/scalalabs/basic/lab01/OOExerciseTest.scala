@@ -78,13 +78,12 @@ class OOExerciseTest extends Specification {
   }
   "Exercise 5: Implicit parameter" should {
     "make currency converter plugable" in {
-      skipped("Uncomment and fix me")
-      //      implicit object anotherConverter extends DefaultCurrencyConverter {
-      //        override val conversionRate = 1.2
-      //      }
-      //      val e: Euro = new Dollar(1, 5)
-      //      e.euro ==== 1
-      //      e.cents ==== 26
+      implicit object anotherConverter extends DefaultCurrencyConverter {
+        override val conversionRate = 1.2
+      }
+      val e: Euro = new Dollar(1, 5)
+      e.euro ==== 1
+      e.cents ==== 26
     }
   }
 }
