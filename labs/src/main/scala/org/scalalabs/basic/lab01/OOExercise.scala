@@ -48,7 +48,7 @@ abstract trait Currency {
 
 class Euro(val euro: Int, val cents: Int = 0) extends Currency with Ordered[Euro] {
   require(cents <= 100 && cents >= 0)
-  def compare(that: Euro) =  this.euro - that.euro
+  def compare(that: Euro) = this.euro - that.euro
 
   val inCents = euro * 100 + cents
 
@@ -69,6 +69,13 @@ class Euro(val euro: Int, val cents: Int = 0) extends Currency with Ordered[Euro
     val diff = euroDiff(totalCents)
     new Euro(totalEuro + diff, totalCents - diff * 100)
   }
+
+  def / = (divideBy: Int) => {
+    if (divideBy <= 0) { throw new IllegalArgumentException }
+    val totalCents = (euro * 100 + cents) / 2
+    val diff = euroDiff(totalCents)
+    new Euro(diff, totalCents - diff * 100)
+  }
 }
 
 object Euro {
@@ -80,7 +87,7 @@ object Euro {
   }
 
   implicit class timesInt(timesBy: Int) {
-    def * (e: Euro): Euro = e * timesBy
+    def *(e: Euro): Euro = e * timesBy
   }
 
   implicit def dollarToEuro(d: Dollar)(implicit c: DefaultCurrencyConverter = DefaultCurrencyConverter): Euro = {
