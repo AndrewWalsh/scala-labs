@@ -83,7 +83,10 @@ object CollectionExercise02 {
    * using a functional approach.
    */
   def groupAdultsPerAgeGroup(persons: Seq[Person]): Map[Int, Seq[Person]] = {
-    error("fix me")
+    persons
+      .filter(p => p.age >= 18)
+      .sortBy(_.name)
+      .groupBy(_.age / 10 * 10)
   }
 }
 
