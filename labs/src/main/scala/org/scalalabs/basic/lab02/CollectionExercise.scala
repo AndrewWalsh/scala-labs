@@ -33,7 +33,40 @@ object CollectionExercise01 {
    *
    */
   def googleCodeJamGooglerese(lines: String*): Seq[String] = {
-    error("fix me")
+    val mapping = Map(
+      'a' -> 'y',
+      'b' -> 'n',
+      'c' -> 'f',
+      'd' -> 'i',
+      'e' -> 'c',
+
+      'f' -> 'w',
+      'g' -> 'l',
+      'h' -> 'b',
+      'i' -> 'k',
+      'j' -> 'u',
+
+      'k' -> 'o',
+      'l' -> 'm',
+      'm' -> 'x',
+      'n' -> 's',
+      'o' -> 'e',
+
+      'p' -> 'v',
+      'q' -> 'z',
+      'r' -> 'p',
+      's' -> 'd',
+      't' -> 'r',
+
+      'u' -> 'j',
+      'v' -> 'g',
+      'w' -> 't',
+      'x' -> 'h',
+      'y' -> 'a',
+
+      'z' -> 'q'
+    ) map (_.swap)
+    lines.map(s => s.map(c => mapping.getOrElse(c, c)))
   }
 }
 /*========================================================== */
