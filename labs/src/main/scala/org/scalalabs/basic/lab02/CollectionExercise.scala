@@ -101,9 +101,9 @@ object CollectionExercise03 {
    * checkValuesIncrease(Seq(1,2,2)) == false
    */
   def checkValuesIncrease[T <% Ordered[T]](seq: Seq[T]): Boolean =
-    error("fix me")
-
+    if (seq.size > 1) seq zip seq.tail forall(t => t._1 < t._2) else true
 }
+
 /*========================================================== */
 
 object CollectionExercise04 {
