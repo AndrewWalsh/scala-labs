@@ -100,7 +100,7 @@ object ListManipulationExercise01 {
    * Implement it whatever way suites you best. Hint: it can be done in a neat way using recursion.
    */
   def tails[T](l: List[T]): List[List[T]] = {
-    error("fix me")
+    if (l.tail.length == 0) List[List[T]](l, List()) else List[List[T]](l) ++ tails(l.tail)
   }
 }
 
