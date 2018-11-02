@@ -24,7 +24,7 @@ object ListManipulationExercise01 {
    * https://www.scala-lang.org/docu/files/api/scala/List.html#foldLeft(B)
    */
   def sumOfList(l: List[Int]): Int = {
-    error("fix me")
+    l.foldLeft(0)(_ + _)
   }
 
   /**
