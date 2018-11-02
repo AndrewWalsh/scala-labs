@@ -10,7 +10,7 @@ object ListManipulationExercise02 {
    * As usual, various ways exist: pattern matching, folding, ...
    */
   def maxElementInList(l: List[Int]): Int = {
-    error("fix me")
+    l.max
   }
 
   /**
