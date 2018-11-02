@@ -36,7 +36,7 @@ object ListManipulationExercise01 {
    *  - ... etc
    */
   def lastElementInList[T](l: List[T]): T = {
-    error("fix me")
+    l.last
   }
 
   /**
