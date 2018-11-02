@@ -80,7 +80,7 @@ object ListManipulationExercise01 {
    * Again, easy to implement using built-in functionality, but also possible to implement in your own free-style way.
    */
   def elementExists[T](l: List[T], e: T): Boolean = {
-    error("fix me")
+    l contains e
   }
 
   /**
