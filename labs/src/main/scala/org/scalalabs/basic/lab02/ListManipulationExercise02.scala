@@ -26,7 +26,7 @@ object ListManipulationExercise02 {
    * method above
    */
   def sumOfMany(l: List[Int]*): List[Int] = {
-    error("fix me")
+    l.reduceLeft(sumOfTwo(_, _))
   }
 
   case class Person(age: Int, firstName: String, lastName: String)
