@@ -15,8 +15,7 @@ object ListManipulationExercise01 {
    *
    */
   def firstElementInList[T](l: List[T]): T = {
-    //buildin
-    null.asInstanceOf[T]
+      l.head
   }
 
   /**
