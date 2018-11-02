@@ -89,7 +89,7 @@ object ListManipulationExercise01 {
    * pattern match or some other method.
    */
   def oddElements(iList: List[Int]): List[Int] = {
-    error("fix me")
+    iList filter(_ % 2 != 0)
   }
 
   /**
