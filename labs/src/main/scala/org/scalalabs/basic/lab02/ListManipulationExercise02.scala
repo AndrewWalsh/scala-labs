@@ -18,7 +18,7 @@ object ListManipulationExercise02 {
    * of the two list
    */
   def sumOfTwo(l1: List[Int], l2: List[Int]): List[Int] = {
-    error("fix me")
+    l1.padTo(l2.length, 0).zip(l2.padTo(l1.length, 0)).map(n => n._1 + n._2)
   }
 
   /**
