@@ -111,9 +111,13 @@ object CollectionExercise04 {
    * Calculate the length of the longest word in a list of sentences.
    * To keep it simple it's ok to use String.split to extract all words of a sentence.
    */
-  def calcLengthLongestWord(lines: String*): Int = {
-    error("fix me")
-  }
+  def calcLengthLongestWord(lines: String*): Int =
+    lines.foldLeft(0) {
+      (acc: Int, str: String) => {
+        val longest = str.split(" ").maxBy(_.length).length
+        if (longest > acc) longest else acc
+      }
+    }
 }
 
 /*========================================================== */
