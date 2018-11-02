@@ -128,7 +128,9 @@ object CollectionExercise05 {
    * E.g. Seq(1,2,3) is Seq(2)
    */
   def filterWithFoldLeft(seq: Seq[Int]): Seq[Int] = {
-    error("fix me")
+    seq.foldLeft(Seq[Int]()) {
+      (acc, int) => if (int % 2 == 0) acc :+ int else acc
+    }
   }
 
   /**
