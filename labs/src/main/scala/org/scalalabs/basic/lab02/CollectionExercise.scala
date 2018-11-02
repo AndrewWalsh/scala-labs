@@ -139,7 +139,13 @@ object CollectionExercise05 {
    * E.g: Seq(1,2,3) is Map(true -> Seq(2), false -> Seq(1,3))
    */
   def groupByWithFoldLeft(seq: Seq[Int]): Map[Boolean, Seq[Int]] = {
-    error("fix me")
+    val seed = Map(
+      true -> Seq[Int](),
+      false -> Seq[Int]()
+    )
+    seq.foldLeft(seed) {
+      (acc, int) => if (int % 2 == 0) acc + (true -> (acc(true) :+ int)) else acc + (false -> (acc(false) :+ int))
+    }
   }
 }
 
