@@ -60,7 +60,7 @@ object ListManipulationExercise01 {
    *  - ... etc
    */
   def concatLists[T](l1: List[T], l2: List[T]): List[T] = {
-    error("fix me")
+    l1 ++ l2
   }
 
   /**
