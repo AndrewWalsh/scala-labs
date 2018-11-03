@@ -45,7 +45,14 @@ object ForExpressionExercise01 {
    * @return largest palindrome.
    */
   def largestPalindromWithForExpression(amountOfDigits: Int): Int = {
-    error("Fix me")
+    val fromAndTo = getFromAndTo(amountOfDigits)
+    val num = for {
+      num <- fromAndTo._1 to fromAndTo._2
+      timesBy <- fromAndTo._1 to fromAndTo._2
+      if (num * timesBy).toString == (num * timesBy).toString.reverse
+    } yield num * timesBy
+    println(num)
+    num.max
   }
 
   /**
