@@ -51,7 +51,6 @@ object ForExpressionExercise01 {
       timesBy <- fromAndTo._1 to fromAndTo._2
       if (num * timesBy).toString == (num * timesBy).toString.reverse
     } yield num * timesBy
-    println(num)
     num.max
   }
 
@@ -64,6 +63,13 @@ object ForExpressionExercise01 {
    * @return largest palindrome.
    */
   def largestPalindromWithHigherOrderFunctions(amountOfDigits: Int): Int = {
-    error("Fix me")
+    val fromAndTo = getFromAndTo(amountOfDigits)
+    val range = fromAndTo._1 to fromAndTo._2
+    range
+      .flatMap(num => range.map(timesBy => (num, timesBy)))
+      .map(tuple => tuple._1 * tuple._2)
+      .withFilter(sum => sum.toString == sum.toString.reverse)
+      .map(identity)
+      .max
   }
 }
