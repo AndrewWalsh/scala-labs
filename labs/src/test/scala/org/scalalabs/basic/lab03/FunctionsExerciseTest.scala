@@ -23,8 +23,7 @@ class FunctionsExerciseTest extends Specification {
         Thread.sleep(10)
         4
       }
-      //uncomment next line
-      //4 ==== FunctionsExercise01.measure(block)
+      4 ==== FunctionsExercise02.measure(block)
       FunctionsExercise02.printed must beMatching("""The execution took: ([1-9][0-9]) ms""")
     }
   }

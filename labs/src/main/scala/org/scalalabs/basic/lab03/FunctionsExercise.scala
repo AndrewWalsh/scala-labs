@@ -25,6 +25,7 @@ object FunctionsExercise01 {
     val scanner = new Scanner(getClass.getResourceAsStream("/text.txt"))
     scanner.useDelimiter("\\Z")
     val content = scanner.next()
+    scanner.close()
     fn(content)
   }
 
@@ -62,8 +63,12 @@ object FunctionsExercise02 {
 
   private def logPerf(elapsed: Long) = printed = s"The execution took: $elapsed ms"
 
-  def measure[T]( /* provide correct method parameter */ ): T = {
-    error("fix me")
+  def measure[T](i: T): T = {
+    val t0 = System.nanoTime() / 10
+    val result = i
+    val t1 = System.nanoTime() / 10
+    logPerf(t1 - t0)
+    result
   }
 
 }
@@ -78,7 +83,7 @@ object FunctionsExercise03 {
 
   def plusOne(x: Int): Int = {
     //implement this by using the plus method with a partially applied construct
-    error("fix me")
+    plus(1, x)
   }
 
   def plus(x: Int, y: Int): Int = {
