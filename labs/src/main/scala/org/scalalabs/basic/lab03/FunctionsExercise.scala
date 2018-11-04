@@ -21,8 +21,11 @@ import sys._
  */
 object FunctionsExercise01 {
 
-  def doWithText( /* provide correct function signature */ ): String = {
-    error("fix me")
+  def doWithText(fn: String => String): String = {
+    val scanner = new Scanner(getClass.getResourceAsStream("/text.txt"))
+    scanner.useDelimiter("\\Z")
+    val content = scanner.next()
+    fn(content)
   }
 
   def reverseText(): String = {
